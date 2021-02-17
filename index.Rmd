@@ -1,18 +1,15 @@
 --- 
-title: "R Module 3"
+title: "Book Title"
 author: 
-  - "Connor Gibbs^[Department of Statistics, Colorado State University, connor.gibbs@colostate.edu]"
+  - "Name of Author"
 date: "`r format(Sys.time(), '%d %h, %Y, %I:%M %p')`"
-description: This is the book for the R Intro Course at CSU.
+description: Description of book.
 link-citations: yes
 bibliography:
 - src/book.bib
 site: bookdown::bookdown_site
 biblio-style: apalike
 ---
-
-
-# Welcome!
 
 ```{r, knitr_options, echo=FALSE, results='hide', message=FALSE}
 # fig.align="center"  centers figures
@@ -28,53 +25,36 @@ knitr::knit_hooks$set(
   }
 )
 
-# A recent change in RMarkdown required this change. 
-
-
 library(kableExtra)
 library(lubridate)
-start_date <- ymd("2020/07/13")
-# designed as a four week course that "meets" 3 times per week.
-course_dates <- start_date + sort(as.vector(outer(c(0, 2, 4), c(0, 7, 14, 21), "+")))
-
-r_version <- "4.0.2"
 ```
 
-Hi, and welcome to the R Module 3 course at Colorado State University!
+# Chapter Title
 
-This course is the third of three 1 credit courses intended to introduce the R programming language, specifically R Markdown.
+Create the book here. 
 
-Through this Module (course), we'll explore how R can be used to do the following:
+Use the special boxes like so...
 
-1. Create reproducible reports so you can explain your work in a narrative form
-2. Track, accept, and revert changes through version control
-3. Share code and collaborate with others
-
-In addition, you'll also be exposed to broader concepts, including:
-
-1. 
-1. 
-1. 
-1.
-
-More detail will be provided in the Course Topics laid out in the next chapter.
-
-### How To Navigate This Book
-
-To move quickly to different portions of the book, click on the appropriate chapter or section in the the table of contents on the left.
-The buttons at the top of the page allow you to show/hide the table of contents, search the book, change font settings, download a pdf or ebook copy of this book, or get hints on various sections of the book.
-The faint left and right arrows at the sides of each page (or bottom of the page if it's narrow enough) allow you to step to the next/previous section.
-Here's what they look like:
-```{r, echo=F, fig.cap="Left and right navigation arrows", fig.show="hold", results='asis'}
-knitr::include_graphics("src/images/left_arrow.png")
-knitr::include_graphics("src/images/right_arrow.png")
+```{block, type='reflect'}
+This box will prompt you to pause and reflect on your experience and/or learning. No feedback will be given, but this may be graded on completion.
 ```
 
-## Associated CSU Course
+```{block, type='assessment'}
+This box will signify a quiz or assignment which you will turn in for grading, on which the instructor will provide feedback.
+```
 
-This bookdown book is intended to accompany the associated course at Colorado State University, but the curriculum is free for anyone to access and use.
-If you're reading the PDF or EPUB version of this book, you can find the "live" version at [https://csu-r.github.io/Module1/](https://csu-r.github.io/Module1/), and all of the source files for this book can be found at [https://github.com/CSU-R/Module1](https://github.com/CSU-R/Module1).
+```{block, type='progress'}
+This box is for checking your understanding, to make sure you are ready for what follows.
+```
 
-If you're not taking the CSU course, you will periodically encounter instructions and references which are not relevant to you. For example, we will make reference to the Canvas website, which only CSU students enrolled in the course have access to.
+```{block, type='video'}
+This box is for displaying/linking to videos in order to help illustrate or communicate concepts.
+```
 
+```{block, type='caution'}
+This box will warn you of possible problems or pitfalls you may encounter! 
+```
 
+```{block, type='bonus'}
+This box is to provide material going beyond the main course content, or material which will be revisited later in more depth.
+```

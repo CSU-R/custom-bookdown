@@ -1,4 +1,4 @@
-book_filename: "Module"
+book_filename: "Book Title"
 delete_merged_file: true
 language:
   ui:
@@ -6,7 +6,7 @@ language:
     before_chapter_script: "rscripts/before_chapter.r"
 rmd_files:
   - "index.Rmd"
-  - "src/02-ChapterTitle.Rmd"
+  - "src/02-AnotherChapterTitle.Rmd"
 output_dir: "docs"
 # rmd_subdir: ["src"]  # misses index.Rmd if we use this
 # clean: ["src/book.bib"] # removes book.bib file when cleaned
