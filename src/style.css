@@ -1,0 +1,45 @@
+.caption {
+  color: #777;
+  margin-top: 10px;
+}
+
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+
+/* Change background of inline code*/
+.book               .book-body .page-wrapper .page-inner section.normal code,
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal code,
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal code {
+  background: rgba(0,0,0,0.05);
+}
+
+/* Don't apply the above formatting to code inside code chunk */
+.book               .book-body .page-wrapper .page-inner section.normal pre > code, 
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre > code,
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre > code {
+  background: inherit;
+}
+
+/* Set background of code chunks */
+.book               .book-body .page-wrapper .page-inner section.normal pre.chunk-style,
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre.chunk-style,
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre.chunk-style{
+  /*background: rgba(0,0,0,0.05);*/
+}
+
+/* Set background of code output */
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre.output-style,
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre.output-style,
+.book               .book-body .page-wrapper .page-inner section.normal pre.output-style{
+  background: #fffbcf;
+}
+
+
+/* Set background of code error messages */
+.book.color-theme-1 .book-body .page-wrapper .page-inner section.normal pre.error-style,
+.book.color-theme-2 .book-body .page-wrapper .page-inner section.normal pre.error-style,
+.book               .book-body .page-wrapper .page-inner section.normal pre.error-style{
+  background: #ffd4d4;
+}
