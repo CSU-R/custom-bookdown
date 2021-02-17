@@ -8,5 +8,5 @@ The goal of custom-bookdown is to provide a template bookdown which incorporates
 
 The boxes are incorporated using custom `R` chunks. Upon compilation, they look like this:
 
-![special boxes after rendering the bookdown](./src/images/special-boxes.png)
+![special boxes after rendering the bookdown](https://github.com/ConGibbs10/custom-bookdown/blob/master/src/images/special-boxes.PNG)
 
